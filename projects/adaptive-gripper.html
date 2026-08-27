@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Engineering case study of Ye Su's one-shot FDM-printed adaptive rigid–flexible robotic gripper, from mechanism design and optimization to robot integration and validation.">
+  <meta name="author" content="Ye Su">
+  <meta name="theme-color" content="#f7f4ee">
+  <meta property="og:title" content="Adaptive Rigid–Flexible Robotic Gripper — Ye Su">
+  <meta property="og:description" content="Structure-driven compliant mechanism design, FDM fabrication, modeling, optimization, and experimental validation.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://philippsu.github.io/projects/adaptive-gripper.html">
+  <meta property="og:image" content="https://philippsu.github.io/assets/projects/gripper/gripper-hero.png">
+  <title>Adaptive Rigid–Flexible Robotic Gripper — Ye Su</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="case-study">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="wordmark" href="../index.html" aria-label="Ye Su, home">YS<span>.</span></a>
+      <nav aria-label="Project navigation">
+        <ul class="nav-list case-nav">
+          <li><a href="#challenge">Challenge</a></li>
+          <li><a href="#architecture">Architecture</a></li>
+          <li><a href="#analysis">Analysis</a></li>
+          <li><a href="#validation">Validation</a></li>
+          <li><a href="#publication">Publication</a></li>
+        </ul>
+      </nav>
+      <a class="nav-cv back-link" href="../index.html#projects"><span aria-hidden="true">←</span> Portfolio</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="case-hero" id="top" aria-labelledby="case-title">
+      <div class="container">
+        <a class="case-back" href="../index.html#projects">← Back to selected projects</a>
+        <div class="case-hero-grid">
+          <div class="case-title-block">
+            <p class="eyebrow">Research project · MiMed, TUM</p>
+            <h1 id="case-title">Adaptive Rigid–Flexible Robotic Gripper</h1>
+            <p class="case-subtitle">Structure-driven compliant mechanism design, FDM fabrication, modeling, optimization, and experimental validation</p>
+            <p class="case-lede">A hands-on mechanism development project spanning concept generation, CAD design, one-shot fabrication, kinematic and force analysis, robot integration, and physical grasping tests.</p>
+            <ul class="case-tags" aria-label="Project disciplines">
+              <li>Mechanical Design</li><li>Compliant Mechanisms</li><li>FDM / Additive Manufacturing</li><li>Robotics</li><li>Experimental Validation</li>
+            </ul>
+          </div>
+          <dl class="case-meta">
+            <div><dt>Institution</dt><dd>Institute of Micro Technology and Medical Device Technology (MiMed), TUM</dd></div>
+            <div><dt>Project type</dt><dd>Semester Thesis / Research</dd></div>
+            <div><dt>Outcome</dt><dd>Peer-reviewed publication, 2026</dd></div>
+          </dl>
+        </div>
+        <figure class="hero-figure">
+          <img src="../assets/projects/gripper/gripper-hero.png" alt="CAD rendering of the robotic gripper identifying its robot-arm flange, motor, transmission, base, flexible zones, and adaptive fingers">
+          <figcaption><span>System overview</span> The complete gripper architecture combines an actuated transmission with two adaptive rigid–flexible fingers.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="case-section" id="challenge" aria-labelledby="challenge-title">
+      <div class="container case-two-column">
+        <div>
+          <p class="section-index">01 / Engineering Challenge</p>
+          <h2 id="challenge-title">Rigidity where loads matter. Compliance where adaptation happens.</h2>
+        </div>
+        <div class="case-copy">
+          <p class="lead">The design objective was to develop a robotic gripper that combines the load-bearing capability of rigid structures with passive adaptability to different object geometries—without making fabrication complex or expensive.</p>
+          <p>Conventional rigid fingers can carry load efficiently but require accurate positioning and object-specific control. Fully soft fingers adapt naturally, but may compromise stiffness and payload. The engineering question was therefore structural: could a single printable geometry provide both behaviors?</p>
+          <div class="design-objectives">
+            <div><span>01</span><p><b>Carry useful loads</b><br>Maintain a stiff external load path.</p></div>
+            <div><span>02</span><p><b>Adapt passively</b><br>Conform to varied object geometry.</p></div>
+            <div><span>03</span><p><b>Manufacture simply</b><br>Use accessible one-shot FDM fabrication.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-tinted" id="exploration" aria-labelledby="exploration-title">
+      <div class="container">
+        <header class="case-section-heading">
+          <div><p class="section-index">02 / Design Exploration</p><h2 id="exploration-title">The mechanism emerged through iteration.</h2></div>
+          <p>Multiple structural concepts were evaluated through repeated CAD modeling, motion assessment, physical prototyping, and testing. Each iteration refined the balance between constraint, adaptability, simplicity, and printability.</p>
+        </header>
+        <figure class="case-image wide-image">
+          <img src="../assets/projects/gripper/design-iterations.png" alt="Four successive CAD concepts for the adaptive gripper finger, labeled Model 1 through Model 4" loading="lazy">
+          <figcaption><span>Concept progression</span> Four mechanism concepts explored different joint arrangements and rigid–flexible load paths before the final architecture was selected.</figcaption>
+        </figure>
+        <div class="iteration-flow" aria-label="Iterative engineering process">
+          <span>CAD concept</span><i>→</i><span>Motion evaluation</span><i>→</i><span>FDM prototype</span><i>→</i><span>Physical test</span><i>↺</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="architecture" aria-labelledby="architecture-title">
+      <div class="container case-feature-grid">
+        <div class="feature-visual">
+          <figure class="case-image">
+            <img src="../assets/projects/gripper/final-design.png" alt="Annotated CAD model of the final gripper showing its rack-and-pinion mounting area, motor housing, arm interface, and movement directions" loading="lazy">
+            <figcaption><span>Final mechanism</span> The actuation and finger structure form a compact gripper designed for robotic-arm mounting.</figcaption>
+          </figure>
+        </div>
+        <div class="feature-copy">
+          <p class="section-index">03 / Final Rigid–Flexible Architecture</p>
+          <h2 id="architecture-title">Compliance created by geometry—not by a soft material.</h2>
+          <p>The finger is printed entirely from a single material, PLA. Its behavior comes from deliberate structural differentiation within the geometry.</p>
+          <dl class="architecture-list">
+            <div><dt>Load path</dt><dd>A stiff outer frame carries the primary grasping load.</dd></div>
+            <div><dt>Adaptation</dt><dd>Localized compliant regions flex to follow the contacted object.</dd></div>
+            <div><dt>Motion</dt><dd>Rotary joints constrain the mechanism to one effective degree of freedom.</dd></div>
+            <div><dt>Response</dt><dd>The geometry redistributes motion passively as contact develops along the finger.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section analysis-section" id="analysis" aria-labelledby="analysis-title">
+      <div class="container">
+        <header class="case-section-heading">
+          <div><p class="section-index">04 / Engineering Analysis</p><h2 id="analysis-title">Model the motion. Understand the force path. Select practical geometry.</h2></div>
+          <p>A simplified sliding–rocker kinematic model described finger motion, while virtual-work-based force transmission analysis connected actuator input to grasping behavior.</p>
+        </header>
+        <div class="analysis-models" aria-label="Mechanism modeling diagrams">
+          <figure>
+            <img src="../assets/projects/gripper/force-transmission-model.png" alt="Simplified force-transmission model showing the upper base point, coil spring, load application point, and forces F1 and F2" loading="lazy">
+            <figcaption><span>01</span><div><b>Force-transmission abstraction</b><small>Load path and force application points</small></div></figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/projects/gripper/kinematic-reference.png" alt="Reference sliding–rocker geometry with points P1, P2, P3, link lengths, and load point P" loading="lazy">
+            <figcaption><span>02</span><div><b>Reference geometry</b><small>Link definition before actuation</small></div></figcaption>
+          </figure>
+          <figure>
+            <img src="../assets/projects/gripper/kinematic-displaced.png" alt="Displaced sliding–rocker configuration showing input stroke, link angles, and transformed load point" loading="lazy">
+            <figcaption><span>03</span><div><b>Displaced configuration</b><small>Mechanism state after input motion</small></div></figcaption>
+          </figure>
+        </div>
+        <div class="analysis-grid">
+          <div class="analysis-notes">
+            <article><span>01</span><div><h3>Kinematic abstraction</h3><p>The compliant finger was represented as a tractable sliding–rocker mechanism to predict its trajectory.</p></div></article>
+            <article><span>02</span><div><h3>Force transmission</h3><p>A virtual-work approach was used to evaluate how geometry affects actuation efficiency.</p></div></article>
+            <article><span>03</span><div><h3>Multi-objective selection</h3><p>Optimization balanced force-transmission performance with useful vertical extension.</p></div></article>
+            <div class="geometry-callout"><span>Selected practical geometry</span><strong><i>a</i> ≈ 32 mm</strong><strong><i>b</i> ≈ 50 mm</strong></div>
+          </div>
+          <figure class="case-image analysis-image">
+            <img src="../assets/projects/gripper/optimization.png" alt="Optimization contour plot with the selected geometry marked near a equals 32 millimeters and b equals 50 millimeters" loading="lazy">
+            <figcaption><span>Geometry optimization</span> The selected point balances normalized performance with a compact, manufacturable mechanism.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-dark" id="manufacturing" aria-labelledby="manufacturing-title">
+      <div class="container">
+        <div class="manufacturing-grid">
+          <div>
+            <p class="section-index">05 / Design for Additive Manufacturing</p>
+            <h2 id="manufacturing-title">Designed around the process—not merely sent to a printer.</h2>
+            <p>The adaptive finger was engineered as a monolithic, one-shot FDM part in PLA. Dimensions were selected to create repeatable flexure while retaining a robust external frame and accounting for practical printer tolerances.</p>
+          </div>
+          <div class="manufacturing-evidence">
+            <div class="manufacturing-gallery">
+              <figure class="manufacturing-image">
+                <img src="../assets/projects/gripper/Fingersize.png" alt="Dimensioned CAD view of the adaptive finger showing its compliant region and rigid outer frame dimensions" loading="lazy">
+                <figcaption>Finger geometry and structural dimensions.</figcaption>
+              </figure>
+              <figure class="manufacturing-image">
+                <img src="../assets/projects/gripper/3d-printing.png" alt="FDM slicer view showing the monolithic gripper arranged on the print bed in PLA" loading="lazy">
+                <figcaption>One-shot FDM build preparation.</figcaption>
+              </figure>
+            </div>
+            <div class="dimension-cards">
+              <article><strong>0.8 <small>mm</small></strong><span>Localized compliant regions</span></article>
+              <article><strong>3.0 <small>mm</small></strong><span>Rigid outer frame</span></article>
+              <article><strong>1 <small>material</small></strong><span>Single-material PLA construction</span></article>
+              <article><strong>1 <small>shot</small></strong><span>Monolithic FDM finger</span></article>
+            </div>
+          </div>
+        </div>
+        <div class="process-strip">
+          <span>Geometry-driven compliance</span><i></i><span>Practical FDM tolerances</span><i></i><span>No multi-material assembly</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section" id="validation" aria-labelledby="validation-title">
+      <div class="container">
+        <header class="case-section-heading">
+          <div><p class="section-index">06 / Robot Integration &amp; Experimental Validation</p><h2 id="validation-title">From printed mechanism to tested robotic system.</h2></div>
+          <p>The completed prototype was mounted to a robotic arm and evaluated through trajectory measurements, tensile-load tests, and grasping trials across a broad range of objects.</p>
+        </header>
+        <div class="validation-layout">
+          <div class="validation-media">
+            <figure class="case-image setup-image">
+              <img src="../assets/projects/gripper/Robot-experimental-setup.png" alt="Experimental setup with the gripper mounted on a robotic arm above a test block and force gauge" loading="lazy">
+              <figcaption><span>Experimental setup</span> Integrated robot, gripper, test block, and force gauge.</figcaption>
+            </figure>
+            <figure class="case-image payload-image">
+              <img src="../assets/projects/gripper/payload-test.png" alt="Payload tests comparing raw PLA, rubber tape, anti-slip tape, foam sponge, textile, and regular fabric contact surfaces" loading="lazy">
+              <figcaption><span>Payload tests</span> Contact materials evaluated under tensile loading.</figcaption>
+            </figure>
+          </div>
+          <div class="result-grid" aria-label="Experimental results">
+            <article><strong>41.2 <small>N</small></strong><p>Baseline payload with bare PLA contact</p></article>
+            <article><strong>58.1 <small>N</small></strong><p>Maximum tensile load with textile-covered contact</p></article>
+            <article><strong>3.6</strong><p>Stroke ratio</p></article>
+            <article><strong>≈ 0.90 <small>mm</small></strong><p>Mean trajectory prediction error</p></article>
+            <article class="wide-result"><strong>≈ 15–120 <small>mm</small></strong><p>Successfully grasped object characteristic size range</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section gallery-section" id="grasping" aria-labelledby="grasping-title">
+      <div class="container">
+        <header class="case-section-heading">
+          <div><p class="section-index">07 / Real-World Grasping</p><h2 id="grasping-title">Passive adaptation across varied objects.</h2></div>
+          <p>Representative trials covered different dimensions, surface properties, stiffnesses, and geometries—from small cylindrical parts to fruit, bottles, tools, and wide containers.</p>
+        </header>
+        <figure class="case-image gallery-image">
+          <img src="../assets/projects/gripper/grasping-tests.png" alt="Fifteen representative grasping tests using objects of varied sizes, shapes, materials, and surface properties" loading="lazy">
+          <figcaption><span>Representative grasp set</span> The same rigid–flexible finger geometry passively conforms to diverse contact conditions.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="case-section publication-section" id="publication" aria-labelledby="publication-title">
+      <div class="container">
+        <p class="section-index">08 / Publication</p>
+        <article class="case-publication">
+          <div class="publication-volume"><span>Mechatronics</span><strong>116</strong><small>2026 · Article 103482</small></div>
+          <div>
+            <p class="publication-label">Peer-reviewed journal article</p>
+            <h2 id="publication-title">Design of a one-shot FDM-printed adaptive robotic gripper with rigid–flexible hybrid fingers</h2>
+            <p class="publication-authors">Ye Su, Tim C. Lueth, Yilun Sun</p>
+            <a class="button primary doi-button" href="https://doi.org/10.1016/j.mechatronics.2026.103482" target="_blank" rel="noreferrer">View publication via DOI ↗</a>
+          </div>
+        </article>
+        <nav class="project-footer-nav" aria-label="Portfolio navigation">
+          <a href="../index.html#projects">← All selected projects</a>
+          <a href="#top">Back to top ↑</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container"><p>© 2026 Ye Su</p><p>Robotics &amp; Mechatronics Engineer · Munich</p><a href="../index.html">Portfolio home</a></div></footer>
+</body>
+</html>

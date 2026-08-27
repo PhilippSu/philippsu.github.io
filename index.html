@@ -1,18 +1,237 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Yesu — Personal Site</title>
-  <style>
-    body{font-family:system-ui,Arial;max-width:760px;margin:40px auto;padding:0 16px;line-height:1.6}
-    h1{margin:0 0 8px}
-    .note{opacity:.75}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ye Su is a Robotics & Mechatronics Engineer in Munich working across mechanical design, medical robotics, multimodal sensing, and embodied robot integration.">
+  <meta name="author" content="Ye Su">
+  <meta name="theme-color" content="#f7f4ee">
+  <meta property="og:title" content="Ye Su — Robotics & Mechatronics Engineer">
+  <meta property="og:description" content="Portfolio focused on medical robotics, embodied robotics, mechatronics, and multimodal systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://philippsu.github.io/">
+  <title>Ye Su — Robotics &amp; Mechatronics Engineer</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/gallery.js" defer></script>
 </head>
 <body>
-  <h1>Hi, I'm Yesu 👋</h1>
-  <p class="note">This is my homepage. React version coming soon.</p>
-  <p><a href="mailto:you@example.com">Email me</a></p>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="wordmark" href="#top" aria-label="Ye Su, home">YS<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li><li><a href="#research">Research</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="nav-cv" href="assets/documents/CV_Ye_Su.pdf" download>CV <span aria-hidden="true">↓</span></a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Munich, Germany</p>
+          <h1 id="hero-title">Ye Su</h1>
+          <p class="hero-role">Robotics &amp; Mechatronics Engineer</p>
+          <p class="hero-topics">Medical Robotics <span>·</span> Embodied Robotics <span>·</span> Mechatronics <span>·</span> Multimodal Systems</p>
+          <p class="hero-summary">Robotics and mechatronics engineer with a strong mechanical engineering foundation and extensive hands-on experience in mechanical design, robotic system integration, rapid prototyping and fabrication, 3D printing, and robot deployment.</p>
+          <p class="hero-summary secondary">Current industry work includes embodied robot demo development, troubleshooting and maintenance, and platform deployment. Research interests include robotic hardware R&amp;D, medical robotics, and multimodal system integration.</p>
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button" href="assets/documents/CV_Ye_Su.pdf" download>View / Download CV</a>
+            <a class="text-link" href="https://github.com/PhilippSu" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a class="text-link" href="https://www.linkedin.com/in/ye-su-a3973930b" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a class="text-link" href="mailto:ye.su@tum.de">Contact →</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Engineering focus">
+          <p class="panel-label">Engineering focus</p>
+          <div class="focus-diagram" aria-hidden="true">
+            <div class="focus-node">Mechanical<br>Design</div><i></i>
+            <div class="focus-node active">System<br>Integration</div><i></i>
+            <div class="focus-node">Robot<br>Deployment</div>
+          </div>
+          <p>From physical design and fabrication to sensing, integration, and operation in real-world robotic systems.</p>
+          <dl class="quick-facts">
+            <div><dt>Base</dt><dd>Munich, DE</dd></div>
+            <div><dt>Current</dt><dd>Industry + Research</dd></div>
+            <div><dt>Approach</dt><dd>Hands-on, system-level</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container split">
+        <div><p class="section-index">01 / About</p><h2 id="about-title">Engineering across the physical and digital system.</h2></div>
+        <div class="about-copy">
+          <p>My path began in mechanical engineering and later expanded into mechatronics, robotics, and medical technology. This foundation shapes how I approach robots: as complete physical systems, not isolated software components.</p>
+          <p>I combine hands-on hardware development—design, fabrication, assembly, and iteration—with multimodal sensing and robotic system integration. My current work spans commercial embodied robot deployment and research on instrumented ultrasound systems for medical robotics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tinted" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-heading">
+          <div><p class="section-index">02 / Selected Projects</p><h2 id="projects-title">Hardware, sensing, and robotics—integrated.</h2></div>
+          <p>Selected academic and industry work. Detailed case studies will be added as the portfolio develops.</p>
+        </header>
+        <div class="project-list">
+          <article class="project-card">
+            <span class="project-number">01</span>
+            <div class="project-body">
+              <p class="project-meta"><span>CAMP, TUM</span><span>Master Thesis / Medical Robotics</span><b>Ongoing</b></p>
+              <h3>Instrumented Freehand Ultrasound for Robot Learning</h3>
+              <p>Designed and iteratively optimized an instrumented ultrasound device integrating an ultrasound probe, Intel RealSense RGB-D camera, NDI tracking marker, and six-axis force/torque sensor for freehand human demonstrations and later robot mounting.</p>
+              <p>The ongoing work includes multimodal ROS 2 data acquisition, extrinsic calibration, coordinate transformations, pose-dependent gravity compensation, temporal alignment, and preparation of robot-learning demonstrations. Learning baselines and robot evaluation are planned next steps.</p>
+              <ul class="tags"><li>Medical Robotics</li><li>ROS 2</li><li>Multimodal Sensing</li><li>RGB-D</li><li>NDI Tracking</li><li>6D Force/Torque</li><li>Calibration</li><li>LeRobot</li></ul>
+              <span class="project-link" aria-disabled="true">View Project <small>Case study planned</small> →</span>
+            </div>
+            <div class="project-visual ultrasound" role="img" aria-label="Placeholder for the instrumented ultrasound project"><span>Project visual</span><small>Instrumented ultrasound system</small></div>
+          </article>
+          <article class="project-card">
+            <span class="project-number">02</span>
+            <div class="project-body">
+              <p class="project-meta"><span>MIMED, TUM</span><span>Semester Thesis / Research</span></p>
+              <h3>Adaptive Compliant Robotic Gripper</h3>
+              <p>Designed and developed an adaptive robotic gripper with one-shot FDM-printed rigid–flexible hybrid fingers, including mechanical design, compliant mechanism development, prototyping, and experimental evaluation.</p>
+              <p>The work later resulted in a peer-reviewed article in <em>Mechatronics</em>.</p>
+              <ul class="tags"><li>Mechanical Design</li><li>Compliant Mechanisms</li><li>FDM</li><li>Rapid Prototyping</li><li>Experimental Evaluation</li></ul>
+              <a class="project-link active-link" href="projects/adaptive-gripper.html">View Project →</a>
+            </div>
+            <a class="project-visual gripper project-visual-image" href="projects/adaptive-gripper.html" aria-label="View the adaptive gripper project">
+              <img src="assets/projects/gripper/gripper-hero.png" alt="CAD overview of the adaptive rigid–flexible robotic gripper">
+              <span>Project visual</span><small>FDM-printed compliant gripper</small>
+            </a>
+          </article>
+          <article class="project-card">
+            <span class="project-number">03</span>
+            <div class="project-body">
+              <p class="project-meta"><span>MINTH Group</span><span>Industry / Robotics</span></p>
+              <h3>Embodied Robotics Integration &amp; Deployment</h3>
+              <p>Hands-on work with commercial embodied robot platforms across small demo and use-case development, on-site deployment, customer-specific configuration, troubleshooting, basic maintenance, and initial fault analysis through log inspection.</p>
+              <p>Work is coordinated with specialist AgiBot teams for deeper platform-level investigation and support.</p>
+              <p class="platforms"><b>Platforms</b> AgiBot A2 · G2 · X2 · D1</p>
+              <ul class="tags"><li>Embodied Robotics</li><li>Demo Development</li><li>Deployment</li><li>Troubleshooting</li><li>Log Analysis</li><li>Customer Integration</li></ul>
+              <span class="project-link" aria-disabled="true">View Project <small>Case study planned</small> →</span>
+            </div>
+            <div class="project-visual embodied project-visual-image project-visual-static">
+              <img src="assets/projects/embodied-robotics-demo.jpg" alt="Embodied robot bottle-handling demo and the corresponding perception and grasping interface" loading="lazy">
+              <span>Project visual</span><small>Commercial robot deployment</small>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <p class="section-index">03 / Experience</p><h2 id="experience-title">Industry experience</h2>
+        <div class="timeline">
+          <article><time>May 2026 — Present</time><div><p class="org">MINTH Group — European Robotics Team</p><h3>Robotics Service Engineer Intern</h3><p class="location">Munich, Germany</p><p>Supporting embodied robot demo and use-case development, platform deployment, customer integration, troubleshooting, log inspection, and basic maintenance in coordination with specialist robotics teams.</p></div></article>
+          <article><time>Sep 2014 — Jun 2018</time><div><p class="org">North Heavy Industries Group</p><h3>Assistant Engineer — Mechanical Design &amp; Project Support</h3><p class="location">Shenyang, China</p><p>Contributed to mechanical design, 3D CAD, industrial engineering activities, and coordination for international engineering projects.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <header class="section-heading">
+          <div><p class="section-index">04 / Research</p><h2 id="research-title">Research environments</h2></div>
+          <p>Applied research across medical robotics, compliant mechanisms, and sensor systems at TUM.</p>
+        </header>
+        <div class="research-grid">
+          <article><span>CAMP</span><p class="research-institution">Chair of Computer Aided Medical Procedures, TUM</p><h3>Medical Robotics</h3><p>Instrumented ultrasound, multimodal sensing, and preparation of human demonstrations for robot learning.</p><ul><li>Medical Robotics</li><li>Robot Learning</li><li>Multimodal Systems</li></ul></article>
+          <article><span>MiMed</span><p class="research-institution">Institute of Micro Technology and Medical Device Technology, TUM</p><h3>Compliant Robotics</h3><p>Adaptive robotic gripper development through mechanical design, compliant mechanisms, FDM, and experimental evaluation.</p><ul><li>Mechanical Design</li><li>Compliant Mechanisms</li><li>Rapid Prototyping</li></ul></article>
+          <article><span>MST</span><p class="research-institution">Institute for Measurement Systems and Sensor Technology, TUM</p><h3>Sensor Systems</h3><p>Machine learning-based algorithm development and experimental evaluation for NO₂ measurement using photoacoustic spectroscopy.</p><ul><li>Fixture Mechanical Design</li><li>Data Acquisition, Processing, and Analysis</li><li>Machine Learning</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publication" aria-labelledby="publication-title">
+      <div class="container split">
+        <div><p class="section-index">05 / Publication</p><h2 id="publication-title">Selected publication</h2></div>
+        <article class="publication">
+          <time>2026</time><div><p><b>Su, Y.*</b></p><h3>One-Shot FDM-Printed Adaptive Robotic Gripper with Rigid–Flexible Hybrid Fingers.</h3><p><em>Mechatronics</em> (Elsevier).</p><a href="https://doi.org/10.1016/j.mechatronics.2026.103482" target="_blank" rel="noreferrer">doi.org/10.1016/j.mechatronics.2026.103482 ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section tinted" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="section-index">06 / Skills</p><h2 id="skills-title">Technical capabilities</h2>
+        <div class="skills-grid">
+          <article><h3>Robotics &amp; Integration</h3><p>ROS 2 · rosbag · multimodal sensor integration · coordinate transformations · robot deployment · 6D force/torque sensing · NDI optical tracking · RGB-D sensing</p></article>
+          <article><h3>Programming &amp; Data</h3><p>Python · robotics data processing · LeRobot dataset preparation · PLC basics</p></article>
+          <article><h3>Mechanical Engineering</h3><p>SolidWorks · CATIA V5 · mechanical design · compliant mechanisms · FDM 3D printing · rapid prototyping · mechanical assembly · fixture design</p></article>
+          <article><h3>Simulation &amp; Analysis</h3><p>Abaqus · SolidWorks Simulation</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container split">
+        <div><p class="section-index">07 / Education</p><h2 id="education-title">Education</h2></div>
+        <div class="education-list">
+          <article><time>2024 — Present</time><div><h3>M.Sc. Medical Technology</h3><p>Technical University of Munich</p></div></article>
+          <article><time>2022 — 2025</time><div><h3>M.Sc. Mechatronics and Robotics</h3><p>Technical University of Munich</p></div></article>
+          <article><time>2010 — 2014</time><div><h3>B.Sc. Mechanical Engineering and Automation</h3><p>Northeastern University</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section additional" aria-labelledby="additional-title">
+      <div class="container">
+        <p class="section-index">08 / Additional</p><h2 class="visually-hidden" id="additional-title">Additional information</h2>
+        <div class="additional-grid">
+          <article><h3>Languages</h3><dl><div><dt>Chinese</dt><dd>Native</dd></div><div><dt>English</dt><dd>Professional working proficiency</dd></div><div><dt>German</dt><dd>Working proficiency</dd></div></dl></article>
+          <article><h3>Selected Awards</h3><ul><li>Second Prize — National College Student Mechanical Design Competition</li><li>First Prize — Liaoning Mechanical Innovation Design Competition</li></ul></article>
+          <article><h3>Activities</h3><p class="activity-item"><b>Captain &amp; Co-founder</b><br>Munich Chinese Student Football Team</p><p class="activity-item"><b>Running</b><br>Completed the Munich Marathon (2023) in 4:59:26 and the Munich Half Marathon (2023) in 1:58:20.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="life-gallery" id="life-gallery" aria-labelledby="life-gallery-title">
+      <div class="container">
+        <header class="life-gallery-heading">
+          <div><p class="section-index">Beyond Engineering</p><h2 id="life-gallery-title">Team spirit, movement, and life outside the lab.</h2></div>
+          <div class="gallery-controls" aria-label="Photo gallery controls">
+            <button type="button" data-gallery-prev aria-label="Show previous photo">←</button>
+            <button type="button" data-gallery-toggle aria-label="Pause automatic slideshow" aria-pressed="false">Pause</button>
+            <button type="button" data-gallery-next aria-label="Show next photo">→</button>
+          </div>
+        </header>
+        <div class="gallery-viewport" data-gallery aria-roledescription="carousel" aria-label="Running and football highlights">
+          <div class="gallery-track" data-gallery-track>
+            <figure class="gallery-slide gallery-slide--document"><img src="assets/images/life/munich-marathon-result.webp" alt="Munich Marathon 2023 result showing a finishing time of 4 hours, 59 minutes, and 26 seconds"><figcaption><span>Running</span>Munich Marathon 2023 · 4:59:26</figcaption></figure>
+            <figure class="gallery-slide gallery-slide--document"><img src="assets/images/life/munich-half-marathon-certificate.webp" alt="Munich Half Marathon certificate showing a finishing time of 1 hour, 58 minutes, and 20 seconds"><figcaption><span>Running</span>Munich Half Marathon 2023 · 1:58:20</figcaption></figure>
+            <figure class="gallery-slide"><img src="assets/images/life/football-action.webp" alt="Football player in an orange kit challenging an opponent for the ball"><figcaption><span>Football</span>Competition and teamwork</figcaption></figure>
+            <figure class="gallery-slide"><img src="assets/images/life/football-team-huddle.webp" alt="Football team in orange kits gathering in a huddle"><figcaption><span>Football</span>Team huddle</figcaption></figure>
+            <figure class="gallery-slide"><img src="assets/images/life/football-match.webp" alt="Amateur football match on a sunny outdoor pitch"><figcaption><span>Football</span>On the pitch</figcaption></figure>
+          </div>
+        </div>
+        <p class="gallery-status visually-hidden" data-gallery-status aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div><p class="section-index">09 / Contact</p><h2 id="contact-title">Let’s connect.</h2><p>I’m open to conversations about robotics and mechatronics opportunities in Germany and across Europe.</p></div>
+        <div class="contact-links">
+          <a href="mailto:ye.su@tum.de"><span>Email</span><strong>ye.su@tum.de</strong><b>→</b></a>
+          <a href="https://www.linkedin.com/in/ye-su-a3973930b" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>Ye Su</strong><b>↗</b></a>
+          <a href="https://github.com/PhilippSu" target="_blank" rel="noreferrer"><span>GitHub</span><strong>PhilippSu</strong><b>↗</b></a>
+          <a href="assets/documents/CV_Ye_Su.pdf" download><span>Curriculum Vitae</span><strong>View / Download CV</strong><b>↓</b></a>
+          <p>Munich, Germany</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container"><p>© 2026 Ye Su</p><p>Robotics &amp; Mechatronics Engineer · Munich</p><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>
