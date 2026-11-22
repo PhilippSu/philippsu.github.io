@@ -25,6 +25,9 @@
 .robotics-responsibilities{margin-top:0}.robotics-responsibilities div{grid-template-columns:110px 1fr}.robotics-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.robotics-gallery figure{min-width:0}.robotics-gallery a{display:block}.robotics-gallery a:hover img{filter:brightness(.96)}.robotics-gallery figcaption{min-height:100px}
 @media(max-width:900px){.robotics-gallery{gap:12px}}
 @media(max-width:620px){.robotics-gallery{grid-template-columns:1fr;gap:24px}.robotics-gallery figcaption{min-height:0}.robotics-responsibilities div{grid-template-columns:95px 1fr;gap:14px}}
+.showroom-gallery{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:36px}
+.showroom-gallery img{aspect-ratio:4/3;object-fit:cover}
+@media(max-width:620px){.showroom-gallery{grid-template-columns:1fr;margin-top:24px}}
 
 /* Project case study */
 .project-link.active-link{color:var(--accent-dark);text-decoration:none;transition:color .2s}.project-link.active-link:hover,.project-link.active-link:focus-visible{color:var(--ink);text-decoration:underline;text-underline-offset:5px}.case-study h2{font-size:clamp(2rem,4vw,3.35rem);font-weight:650}.case-study img{display:block;width:100%;height:auto}.back-link{white-space:nowrap}.case-back{display:inline-block;margin-bottom:58px;color:var(--muted);font-size:.78rem;font-weight:700;text-underline-offset:5px}.case-back:hover{color:var(--accent)}
